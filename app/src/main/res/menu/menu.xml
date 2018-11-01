@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="配置"
+        app:showAsAction="ifRoom">
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item
+                    android:id="@+id/action_config"
+                    android:icon="@null"
+                    android:title="配置B站账号"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_config_linux_push"
+                    android:icon="@null"
+                    android:title="配置服务器推流方式"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_config_scheme"
+                    android:icon="@null"
+                    android:title="配置解析方案"
+                    app:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_log"
+        android:title="日志"
+        app:showAsAction="ifRoom" />
+
+</menu>
